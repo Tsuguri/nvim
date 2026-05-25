@@ -6,7 +6,7 @@ return {
 
         local cwd = vim.fn.getcwd()
 
-        local cargo_conf = {targetDir = "analyzerTarget"}
+        local cargo_conf = {targetDir = "/home/tsuguri/.analyzerTarget/"}
         if cwd == "C:\\Users\\adamo\\Documents\\LIV\\liv-control-center" then
             cargo_conf["target"] = "aarch64-linux-android"
             print("using android build target")

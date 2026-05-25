@@ -17,3 +17,15 @@ require("lazy").setup("plugins")
 
 
 
+vim.diagnostic.config({
+    virtual_text = {
+        filter = function(diagnostic)
+            return diagnostic.code ~= "inactive-code"
+        end,
+    },
+    underline = {
+        filter = function(diagnostic)
+            return diagnostic.code ~= "inactive-code"
+        end,
+    }
+})
